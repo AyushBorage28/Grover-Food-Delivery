@@ -293,3 +293,52 @@ input {
   .loader-container.fade-out{
     top:-120%;
   }
+  .second-page{
+    padding:10rem 0;
+    background-color: var(--section-background-color);
+  }
+  .section-metadata{
+    text-align: center;
+  }
+  .section-tagline{
+    display: inline-block;
+    font-weight: 500;
+    color: var(--accent-color);
+    line-height: 2.4rem;
+    margin-bottom: .8rem ;
+  }
+  .section-title{
+    font-size: 2.4rem;
+    line-height: 4.4rem;
+    margin-bottom: 2.2rem;
+  }
+  .card-group{
+    margin: 7rem 0 2rem;
+    gap: 2rem;
+  }
+  .card{
+    padding: 3rem 2.2rem;
+    background-color: var(--light-color);
+    border-radius: 1.2rem;
+  }
+  .card-header{
+    display: flex;
+  }
+  .card-header img{
+    height: 6rem;
+    margin: 0 auto;
+  }
+  .card-body{
+    text-align: center;
+    margin: 6rem 0 2rem;
+  }
+  .card-title{
+    font-size: 1.8rem;
+    line-height: 3.3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  .card-body p{
+    line-height: 2.5rem;
+  }
+  
