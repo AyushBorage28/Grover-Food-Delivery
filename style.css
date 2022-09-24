@@ -524,5 +524,37 @@ line-height: 2rem;
     flex-direction: row;
     margin: 0 auto;
   }
+  .menu .list-item{
+    margin: 0 1.6rem;
+  }
+  .search-box{
+    margin-top: 0;
+  }
+  .download-container,
+  .third-page-container,
+  .fourth-page-container,
+  .container{
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2.4rem;
+  }
+  .card{
+    padding: 4rem 2.6rem;
+    margin: 1rem;
+  }
+   .third-page-container{
+    grid-template-columns: repeat(12,1fr);
+    column-gap: 2.4rem;
+  }
+  .third-page .image-content-group{
+    grid-column: span 7;
+  }
+  .third-page .text-content-group{
+    grid-column: span 5;
+  } 
+  .third-page .text-content-group .section-metadata .p{
+    margin-right: 8rem;
+  }
+
+
 
 }
