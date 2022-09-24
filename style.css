@@ -3,7 +3,7 @@
 
 /* !RESET/BASE */
 *,
-*::before
+*::before,
 *::after {
     margin: 0;
     padding: 0;
@@ -73,10 +73,12 @@ input {
     padding-block: .8rem;
     /* border: 1px solid green; */
 }
+.logo{
+  margin-right: 10rem;
+}
 .logo-image{
     min-width: 15.5rem;
     /* border: solid black 2px; */
-    margin-right: 10 rem;
 }
  .menu-toggler{
     width: 5.6 rem;
@@ -183,7 +185,9 @@ input {
 .cart-icon:focus .path{
     fill: var(--accent-color);
 }
-
+.d-grid{
+  display: grid;
+}
 .hero{
     position: relative;
     text-align: center;
@@ -229,55 +233,12 @@ input {
     color:var(--dark-color);
     padding-left: 2rem;
   }
-  .home .content h2{
-    font-size: 3rem;
-    color:var(--dark-color-lighter);
-    padding-left: 2rem;
-  }
   
   .home .content p{
     font-size: 1.7rem;
     color:#666;
     padding:1rem 2rem;
 
-  }
-  .btn,.btn2{
-    display: inline-block;
-    padding:.8rem 3rem;
-    border:.2rem solid var(--accent-color);
-    color:var(--red);
-    cursor: pointer;
-    font-size: 1.7rem;
-    border-radius: .5rem;
-    position: relative;
-    overflow: hidden;
-    z-index: 0;
-    margin-top: 1rem;
-    margin-left: 2rem;
-  }
-  
-  .btn::before{
-    content: '';
-    position: absolute;
-    top:0; right: 0;
-    width:0%;
-    height:100%;
-    background:var(--accent-color);
-    transition: .3s linear;
-    z-index: -1;
-  }
-  
-  .btn:hover::before{
-    width:100%;
-    left: 0;
-  }
-  
-  .btn:hover{
-    color:#fff;
-  }
-  .btn2{
-    background-color: var(--accent-color);
-    color: var(--light-color);
   }
   .loader-container{
     position: fixed;
@@ -294,7 +255,7 @@ input {
     top:-120%;
   }
   .second-page{
-    padding:10rem 0;
+    padding:5rem 0;
     background-color: var(--section-background-color);
   }
   .section-metadata{
@@ -341,4 +302,227 @@ input {
   .card-body p{
     line-height: 2.5rem;
   }
+  .third-page{
+    padding: 5rem 0;
+  }
+  section:not(.hero) .text-content-group{
+    margin: 8rem 0 2rem;
+  }
+
+  .third-page .section-tagline{
+    color: #03a66b;
+  }
+  section:not(.hero) .button{
+    margin: 5rem 0;
+  }
+  .button-group{
+    margin: 0em 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2.4rem;
+  }
+  .button{
+    display: inline-block;
+    text-align: center;
+    background-color: var(--accent-color);
+    color: var(--light-color);
+    padding: 1.4rem;
+    border: 1px solid transparent;
+    border-radius: .8rem;
+    transition: background-color .25s;
+  }
   
+  .home .button{
+    font-size: 1.2rem;
+  }
+  .home .button-transparent{
+    padding: 0;
+  }
+  .button:not(.button-transparent):hover,
+  .button:not(.button-transparent):focus{
+   background-color: var(--light-color);
+   color: var(--accent-color);
+   border-color: var(--accent-color);
+  }
+  .button-transparent{
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    color: var(--dark-color);
+  }
+  .play-icon{
+    width: 5rem;
+    border-radius: 50%;
+    margin-right:1.2rem ;
+    box-shadow: 0 .5rem 2rem rgba(0, 0, 0, .8);
+  }
+  .button-transparent img{
+    transition: transform .25s ease-in-out;
+  }
+  .button-transparent:hover,
+  .button-transparent:focus{
+   transform: scale(1.1);
+  }
+  .text-content-group{
+    align-items: center;
+    text-align: center;
+  }
+  .title{
+    color: var(--dark-color);
+    font-weight: 700;
+  }
+  .fourth-page{
+    padding: 0 0 10rem;
+  }
+  .fourth-page .section-tagline{
+    color: #f9ba45;
+  }
+.download{
+  padding: 5rem 0;
+  background-color: var(--section-background-color);
+}
+.download-container .image-content-group img{
+  margin: 0 auto;
+}
+.download .button-group{
+  margin: 0;
+}
+.download .button{
+  display: flex;
+  align-items: center;
+  column-gap:1rem;
+  padding-block: 1rem;
+  border: 1px solid rgba(0, 0, 0,.1);
+}
+  #footer{
+  text-align: center;
+  padding: 5rem 0 3rem;
+} 
+.company-data{
+  margin-block: 2rem;
+}
+#footer .logo{
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.company-description{
+  margin-top: 2.5rem 0 1rem;
+  line-height: 3rem;
+}
+.footer-group{
+  margin: 3rem 0 1rem;
+}
+.footer-title{
+font-size: 1.8rem;
+font-weight: 600;
+line-height: 2rem;
+}
+.footer-group .list{
+  margin: inherit;
+}
+.footer-group .link{
+  line-height: 4rem;
+}
+.horizontal-line{
+  margin-block: 3rem;
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0,.05);
+}
+.copyright-information{
+  line-height: 2.4rem;
+}
+.legal-information{
+  font-weight: 500;
+  margin: 0 1.2rem;
+  transition: color .5s;
+}
+.legal-information a:hover,
+.legal-information a:focus{
+  color: var(--accent-color);
+} 
+
+/* MediaQueries */
+@media screen and (min-width:768px) {
+  .body{
+    font-size: 1.6rem;
+  }
+  .hero{
+    padding: 8rem 0 12rem;
+  }
+  .container{
+    max-width: 72rem;
+  }
+  .button-group{
+    justify-content: flex-start;
+  }
+  .button{
+    width: 18rem;
+    padding: 1.8rem 2rem;
+  }
+  .home .button{
+    font-size: inherit;
+  }
+  .home .button-transparent{
+    width: 100%;
+  }
+  .play-icon{
+    width: 7rem;
+  }
+  .text-content-group,
+  .section-metadata{
+    text-align: left;
+  }
+  .second-page .section-metadata{
+    text-align: center;
+  }
+  .section-title{
+    font-size: 3.2rem;
+  }
+  .card-group{
+    grid-template-columns: repeat(3,1fr);
+    column-gap:2.4rem ;
+  }
+  section:not(.home) .text-content-group{
+    margin: 10rem 0 2rem;
+  }
+  .fourth-page .text-content-group{
+    margin:8rem !important;
+  }
+  .footer-bottom-data{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+  }
+
+  .home .content h3{
+    font-size: 7rem;
+  }
+  .home .content p{
+    font-size: 2.8rem;
+  }
+}
+@media screen and (min-width:992px) {
+  .container{
+    max-width: 96rem;
+  }
+  .navbar{
+    flex-wrap: nowrap;
+  }
+  .menu-toggler{
+    display: none;
+  }
+  .menu{
+    flex-direction: row;
+    max-height: intital !important;
+    overflow:visible !important;
+    transition: none;
+  }
+  .menu > .list{
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+}
