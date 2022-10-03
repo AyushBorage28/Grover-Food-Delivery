@@ -1,245 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grover</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css" integrity="sha512-+oRH6u1nDGSm3hH8poU85YFIVTdSnS2f+texdPGrURaJh8hzmhMiZrQth6l56P4ZQmxeZzd2DqVEMqQoJ8J89A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-</head>
-<body>
-      <header class="header">
-        <nav class="navbar container ">
-            <a href="index.html" class="logo">
-                <img src="Images/grover_logo.svg" alt="" class="logo-image">
-            </a>
-            <button type="button" class="menu-toggler">
-                <i class="fa-solid toggle-icon fa-xmark close-icon"></i>
-                <i class="fa-solid toggle-icon fa-bars open-icon"></i>
-            </button>
-            <div class="menu">
-                <ul class="list">
-                    <li class="list-item"><a href="#"class="l-link first-link">Home</a></li>
-                    <li class="list-item"><a href="#"class="l-link">Menu</a></li>
-                    <li class="list-item"><a href="#"class="l-link">Service</a></li>
-                    <li class="list-item"><a href="#"class="l-link">Shop</a></li>
-                  </ul>
-                  <div class="search-box">
-                    <form action="" class="search-form">
-                        <span class="form-icon search-icon">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z" fill="rgba(83,91,92,1)"/></svg>
-                        </span>
-                        <input type="text" class="search-input" placeholder="Search" >
-                         <button class="form-icon cart-icon">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path class="path" d="M6 9h13.938l.5-2H8V5h13.72a1 1 0 0 1 .97 1.243l-2.5 10a1 1 0 0 1-.97.757H5a1 1 0 0 1-1-1V4H2V2h3a1 1 0 0 1 1 1v6zm0 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="rgba(75,84,87,1)"/></svg>
-                        </button> 
-                    </form>
-                  </div>
-            </div>
-         
-        </nav>
-      </header>
-      <section class="home" id="home">
-
-        <div class="content">
-            <h3>Home-Cooked Deliciousness</h3>
-            <p>Hungry? You're in the right place...</p>
-            <div class="button-group">
-            <a href="#" class="button button-normal">Order Now</a>
-            <button class="button button-transparent"><img src="Images/button-play.svg" alt="Play Button" class="play-icon">How To Order</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grover</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css"
+      integrity="sha512-+oRH6u1nDGSm3hH8poU85YFIVTdSnS2f+texdPGrURaJh8hzmhMiZrQth6l56P4ZQmxeZzd2DqVEMqQoJ8J89A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar container">
+        <a href="index.html" class="logo">
+          <img src="Images/grover_logo.svg" alt="" class="logo-image" />
+        </a>
+        <button type="button" class="menu-toggler">
+          <i class="fa-solid toggle-icon fa-xmark close-icon"></i>
+          <i class="fa-solid toggle-icon fa-bars open-icon"></i>
+        </button>
+        <div class="menu">
+          <ul class="list">
+            <li class="list-item">
+              <a href="#" class="l-link first-link">Home</a>
+            </li>
+            <li class="list-item"><a href="menu.html" class="l-link">Menu</a></li>
+            <li class="list-item"><a href="#" class="l-link">Services</a></li>
+            <li class="list-item"><a href="#" class="l-link">Add Restaurant</a></li>
+          </ul>
+          <div class="search-box">
+            <form action="" class="search-form">
+              <span class="form-icon search-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                >
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
+                    fill="rgba(83,91,92,1)"
+                  />
+                </svg>
+              </span>
+              <input type="text" class="search-input" placeholder="Search" />
+              <button class="form-icon cart-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"><path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    class="path"
+                    d="M6 9h13.938l.5-2H8V5h13.72a1 1 0 0 1 .97 1.243l-2.5 10a1 1 0 0 1-.97.757H5a1 1 0 0 1-1-1V4H2V2h3a1 1 0 0 1 1 1v6zm0 14a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                    fill="rgba(75,84,87,1)"
+                  />
+                </svg>
+              </button>
+              <button class="form-icon account-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path  class="path" d="M12 2c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zM6.023 15.416C7.491 17.606 9.695 19 12.16 19c2.464 0 4.669-1.393 6.136-3.584A8.968 8.968 0 0 0 12.16 13a8.968 8.968 0 0 0-6.137 2.416zM12 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" fill="rgba(106,106,106,1)"/></svg>
+              </button>
+            </form>
           </div>
         </div>
-    
-        <div class="image">
-            <img src="Images/slider-image-1024x961.png" alt="">
+      </nav>
+    </header>
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Home-Cooked Deliciousness</h3>
+        <p>Hungry? You're in the right place...</p>
+        <div class="button-group">
+          <a href="#" class="button button-normal">Order Now</a>
+          <button class="button button-transparent">
+            <img
+              src="Images/button-play.svg"
+              alt="Play Button"
+              class="play-icon"
+            />How To Order
+          </button>
         </div>
-      </section>
+      </div>
 
-      <!-- loader  -->
-<!-- <div class="loader-container">
+      <div class="image">
+        <img src="Images/slider-image-1024x961.png" alt="" />
+      </div>
+    </section>
+
+    <!-- loader  -->
+    <!-- <div class="loader-container">
   <img src="images/loader-7.gif" alt="">
 </div> -->
 
-<section class="second-page">
-<div class="container">
-  <div class="section-metadata">
-    <span class="section-tagline">
-      What we Serve
-    </span>
-    <h2 class="title section-title">All Your Family Needs Is A Warm And Homemade Meal!</h2>
-  </div>
-  <div class="card-group d-grid">
-    <div class="card">
-      <header class="card-header">
-        <img src="Images/free_shipping_icon.svg" alt="Free shipping icon">
-      </header>
-      <div class="card-body">
-        <h3 class="title card-title">No Minimum Order</h3>
-        <p>Order in for yourself or for the group, with no restrictions on order value</p>
-      </div>
-    </div>
-    <div class="card">
-      <header class="card-header">
-        <img src="Images/money_back_guarantee_icon.svg" alt="Free shipping icon">
-      </header>
-      <div class="card-body">
-        <h3 class="title card-title">Live Order Tracking</h3>
-        <p>Know where your order is at all times, from the restaurant to your doorstep</p>
-      </div>
-    </div>
-    <div class="card">
-      <header class="card-header">
-        <img src="Images/secure_checkout_icon.svg" alt="Free shipping icon">
-      </header>
-      <div class="card-body">
-        <h3 class="title card-title">Lightning-Fast Delivery</h3>
-        <p>Experience Grover's superfast delivery for food delivered fresh & on time</p>
-      </div>
-    </div>
-
-  </div>
-</div>
-</section>
-  <section class="third-page">
-    <div class="third-page-container d-grid">
-      <div class="image-content-group">
-        <img src="Images/feat.png" alt="">
-      </div>
-      <div class="text-content-group">
+    <section class="second-page">
+      <div class="container">
         <div class="section-metadata">
-          <span class="section-tagline">
-           Why Choose Us
+          <span class="section-tagline"> What we Serve </span>
+          <h2 class="title section-title">
+            All Your Family Needs Is A Warm And Homemade Meal!
+          </h2>
+        </div>
+        <div class="card-group d-grid">
+          <div class="card">
+            <header class="card-header">
+              <img
+                src="Images/free_shipping_icon.svg"
+                alt="Free shipping icon"
+              />
+            </header>
+            <div class="card-body">
+              <h3 class="title card-title">No Minimum Order</h3>
+              <p>
+                Order in for yourself or for the group, with no restrictions on
+                order value
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <header class="card-header">
+              <img
+                src="Images/money_back_guarantee_icon.svg"
+                alt="Free shipping icon"
+              />
+            </header>
+            <div class="card-body">
+              <h3 class="title card-title">Live Order Tracking</h3>
+              <p>
+                Know where your order is at all times, from the restaurant to
+                your doorstep
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <header class="card-header">
+              <img
+                src="Images/secure_checkout_icon.svg"
+                alt="Free shipping icon"
+              />
+            </header>
+            <div class="card-body">
+              <h3 class="title card-title">Lightning-Fast Delivery</h3>
+              <p>
+                Experience Grover's superfast delivery for food delivered fresh
+                & on time
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="third-page">
+      <div class="third-page-container d-grid">
+        <div class="image-content-group">
+          <img src="Images/feat.png" alt="" />
+        </div>
+        <div class="text-content-group">
+          <div class="section-metadata">
+            <span class="section-tagline"> Why Choose Us </span>
+            <h2 class="title section-title">
+              Find favorites and discover new ones
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur ajhjh jhjh jhjh jjhj jjh
+              jhjh jhj jhjhfgfgggfgfgfgfgfgfgfgfgfgfgfgf.
+            </p>
+          </div>
+          <a href="#" class="button">Explore Now</a>
+        </div>
+      </div>
+    </section>
+    <section class="fourth-page">
+      <div class="fourth-page-container d-grid">
+        <div class="image-content-group">
+          <img src="Images/feat2.png" alt="" />
+        </div>
+        <div class="text-content-group">
+          <div class="section-metadata">
+            <span class="section-tagline"> Home Delivery </span>
+            <h2 class="title section-title">
+              Sit at home, we will take care of your order
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              ab totam a nulla voluptas magni necessitatibus nobis illo nemo
+              unde.
+            </p>
+          </div>
+          <a href="#" class="button">Explore Now</a>
+        </div>
+      </div>
+    </section>
+    <section class="download">
+      <div class="download-container container d-grid">
+        <div class="image-content-group">
+          <img src="Images/phone_app_image.svg" alt="Phone-App" />
+        </div>
+        <div class="text-content-group">
+          <div class="section-metadata">
+            <span class="section-tagline"> Download Our App </span>
+            <h2 class="title section-title">Restaurants in you pocket</h2>
+            <p>
+              Order from your favorite restaurants & track on the go, with the
+              all-new Swiggy app.
+            </p>
+          </div>
+          <div class="button-group ">
+            <a href="#" class="button button-transparent last-button  download-button">
+              <img src="Images/apple_store.svg" alt="Apple Store Logo" />
+              App Store
+            </a>
+            <a href="#" class="button button-transparent last-button download-button">
+              <img src="Images/play_store.svg" alt="Apple Store Logo" />
+              Play Store
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-top-data d-grid">
+          <div class="company-data">
+            <a href="index.html" class="logo">
+              <img src="Images/grover_logo.svg" alt="" class="logo-image" />
+            </a>
+            <p class="company-description">
+              Order food online from restaurants and get it delivered. Serving
+              in Bangalore, Hyderabad, Delhi, Gurgaon, Nagpur, Jaipur,
+              Coimbatore, Chandigarh, Ahemdabad.
+            </p>
+          </div>
+          <div class="footer-group">
+            <h6 class="footer-title title">Company</h6>
+            <ul class="list">
+              <li class="list-item">
+                <a href="#" class="l-link">About Us</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="l-link">Blog</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="l-link">Products</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="l-link">Careers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-group">
+            <h6 class="footer-title title">Services</h6>
+            <ul class="list">
+              <li class="list-item">
+                <a href="#" class="l-link">Order Tracking</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="l-link">Wishlist</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="l-link">My Account</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="l-link">Terms & Conditions</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-group">
+            <h6 class="title footer-title">Get in Touch</h6>
+            <ul class="list">
+              <li class="list-item">
+                <a href="#" class="l-link">About Us</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="l-link">Blog</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="l-link">Products</a>
+              </li>
+              <li class="list-item">
+                <a href="#" class="l-link">Careers</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="horizontal-line" />
+        <div class="footer-bottom-data">
+          <span class="copyright-info">
+            &copy;Grovers 2022. All Rights Reserved.
           </span>
-          <h2 class="title section-title">Find favorites and discover new ones</h2>
-          <p>Lorem ipsum dolor sit amet consectetur ajhjh jhjh jhjh jjhj jjh jhjh jhj jhjhfgfgggfgfgfgfgfgfgfgfgfgfgfgf.</p>
-        </div>
-        <a href="#" class="button">Explore Now</a>
-      </div>
-    </div>
-  </section>
-  <section class="fourth-page">
-    <div class="fourth-page-container d-grid">
-      <div class="image-content-group">
-        <img src="Images/feat2.png" alt="">
-      </div>
-      <div class="text-content-group">
-        <div class="section-metadata">
-          <span class="section-tagline">
-           Home Delivery
-          </span>
-          <h2 class="title section-title">Sit at home, we will take care of your order</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus ab totam a nulla voluptas magni necessitatibus nobis illo nemo unde.</p>
-        </div>
-        <a href="#" class="button">Explore Now</a>
-      </div>
-    </div>
-  </section>
-  <section class="download">
-    <div class="download-container container d-grid">
-<div class="image-content-group">
-  <img src="Images/phone_app_image.svg" alt="Phone-App">
-</div>
-<div class="text-content-group">
-  <div class="section-metadata">
-    <span class="section-tagline">
-     Download Our App
-    </span>
-    <h2 class="title section-title">Restaurants in you pocket</h2>
-    <p>Order from your favorite restaurants & track on the go, with the all-new Swiggy app.</p>
-  </div>
-  <div class="button-group">
-    <a href="#" class="button button-transparent last-button">
-      <img src="Images/apple_store.svg" alt="Apple Store Logo">
-       App Store
-    </a>
-    <a href="#" class="button button-transparent last-button">
-      <img src="Images/play_store.svg" alt="Apple Store Logo">
-       Play Store
-    </a>
-  </div>
-</div>
-    </div>
-  </section>
-  <footer id="footer">
-    <div class="container">
-      <div class="footer-top-data d-grid">
-        <div class="company-data">
-          <a href="index.html" class="logo">
-            <img src="Images/grover_logo.svg" alt="" class="logo-image">
-        </a>
-        <p class="company-description">
-          Order food online from restaurants and get it delivered. Serving in Bangalore, Hyderabad, Delhi, Gurgaon, Nagpur, Jaipur, Coimbatore, Chandigarh, Ahemdabad.
-        </p>
-        </div>
-        <div class="footer-group">
-          <h6 class="footer-title title">Company</h6>
-          <ul class="list">
-            <li class="list-item">
-              <a href="#" class="l-link">About Us</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="l-link">Blog</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="l-link">Products</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="l-link">Careers</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-group">
-          <h6 class="footer-title title">Services</h6>
-          <ul class="list">
-            <li class="list-item">
-              <a href="#" class="l-link">Order Tracking</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="l-link">Wishlist</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="l-link">My Account</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="l-link">Terms & Conditions</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-group">
-          <h6 class=" title footer-title">Get in Touch</h6>
-          <ul class="list">
-            <li class="list-item">
-              <a href="#" class="l-link">About Us</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="l-link">Blog</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="l-link">Products</a>
-            </li>
-            <li class="list-item">
-              <a href="#" class="l-link">Careers</a>
-            </li>
-          </ul>
+          <div class="legal-information">
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+          </div>
         </div>
       </div>
-      <hr class="horizontal-line">
-      <div class="footer-bottom-data">
-        <span class="copyright-info">
-          &copy;Grovers 2022. All Rights Reserved.
-        </span>
-        <div class="legal-information">
-          <a href="#">Terms & Conditions</a>
-          <a href="#">Privacy Policy</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script src="script.js"></script>
-</body>
-
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
