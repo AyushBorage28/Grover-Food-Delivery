@@ -172,7 +172,7 @@ a {
   }
   .title{
     color: var(--dark-color);
-    font-weight: 700;
+    font-weight: 600;
   }
   .footer-group .list{
     margin: inherit;
