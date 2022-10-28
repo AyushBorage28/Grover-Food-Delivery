@@ -99,7 +99,15 @@ color: var(--body-font-color);
     border-radius: 5px;
     width: 180px;
 }
-
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.documents img{
+  width: 500px;
+  height: auto;
+}
 /* FOOTER CSS */
 
 .container{
@@ -107,9 +115,8 @@ color: var(--body-font-color);
   padding: 0 1.2rem;
 }
 .d-grid{
-    display: grid;
-  }
- 
+  display: grid;
+}
 #footer{
     text-align: center;
     padding: 5rem 0 3rem;
@@ -357,14 +364,43 @@ input {
     font-weight: 700;
   }
   .card-title{
-    font-size: 1.8rem;
+    font-size: 3rem;
     line-height: 3.3rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
   }
   .card-body p{
+    font-size: 1.7rem;
     line-height: 2.5rem;
   }
+
+  /* HOW IT WORKS */
+ .third-page{
+    padding:5rem 0;
+    background-color: var(--light-color);
+  }
+  .third-page .card{
+    padding: 3rem 2.2rem;
+    background-color: var(--section-background-color);
+    border-radius: 1.2rem;
+  }
+  .third-page .section-tagline{
+    color: #03a66b;
+  }
+
+/* REVIEWS */
+.fourth-page{
+  padding:5rem 0;
+  background-color: var(--light-color);
+}
+.fourth-page .card{
+  padding: 3rem 2.2rem;
+  background-color: var(--section-background-color);
+  border-radius: 1.2rem;
+}
+.fourth-page .section-tagline{
+  color: #f9ba45;
+}
 
 /* MEDIA QUERIES */
 
@@ -375,6 +411,9 @@ input {
         max-width: 72rem;
       }
     .second-page .section-metadata{
+        text-align: center;
+      }
+      .third-page .section-metadata{
         text-align: center;
       }
 
@@ -402,6 +441,10 @@ input {
   }
   .food-items{
     text-align: center;
+  }
+  .image img{
+    height: 28rem;
+    width: auto;
   }
 }
 @media screen and (min-width:992px) {
@@ -477,6 +520,11 @@ input {
     }
     @media screen and (min-width:1400px) {
     .second-page .section-title{
+        max-width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .third-page .section-title{
         max-width: 50%;
         margin-left: auto;
         margin-right: auto;

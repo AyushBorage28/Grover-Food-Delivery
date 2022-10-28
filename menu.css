@@ -15,7 +15,8 @@
     --accent-color: #F55556;
     --section-background-color: #FEF5F5;
 }
-html {
+html 
+{
   font-size: 62.5%;
 }
 body{
