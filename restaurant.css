@@ -362,7 +362,7 @@ input {
   }
   .title{
     color: var(--dark-color);
-    font-weight: 700;
+    font-weight: 600;
   }
   .card-title{
     font-size: 3rem;
